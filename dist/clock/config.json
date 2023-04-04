@@ -1,0 +1,18 @@
+{
+    "SCREEN_WIDTH": "1920",
+    "SCREEN_HEIGHT": "1080",
+    "SCREEN_OFFSET_X": "0",
+    "SCREEN_OFFSET_Y": "0",
+
+    "W_SCREEN_WIDTH": "600",
+    "W_SCREEN_HEIGHT": "600",
+    "W_SCREEN_OFFSET_X": "0",
+    "W_SCREEN_OFFSET_Y": "0",
+
+    "FONT_SIZE": "180",
+    "W_FONT_SIZE": "80",
+
+    "ALPHA": "0.65",
+    "W_ALPHA": "1"
+
+}
