@@ -1,8 +1,12 @@
 # py-clock
 
-How to use it:
+Made for absolutely no reason with ChatGPT "help"
 
-Configure the config.json file into something thats make sense for your monitor setup.
-Run the program.
-Press the button fullscreen to fullscreen.
-ESC to go to window mode from fullscreen, ESC again to exit the program.
+## How to use it:
+
+* Configure the config.json file into something thats make sense for your monitor setup.
+* Run the program.
+* Press the button fullscreen.
+* ESC to go from fullscreen to window mode, ESC again to exit the program.
+
+
