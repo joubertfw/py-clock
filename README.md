@@ -9,6 +9,7 @@ Made for absolutely no reason with ChatGPT "help"
 * Press the button fullscreen.
 * ESC to go from fullscreen to window mode, ESC again to exit the program.
 
+
 pyinstaller --noconsole clock.py to generate a new .exe
 
 
