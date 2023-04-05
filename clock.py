@@ -20,8 +20,11 @@ with open('config.json', 'r') as f:
     FONT_SIZE = jsonFile['FONT_SIZE']
     W_FONT_SIZE = jsonFile['W_FONT_SIZE']
 
+    FONT_NAME = jsonFile['FONT_NAME']
+
     ALPHA = jsonFile['ALPHA']
     W_ALPHA = jsonFile['W_ALPHA']
+
 
 # Create the main window
 root = tk.Tk()
@@ -34,7 +37,7 @@ root.geometry("{0}x{1}+{2}+{3}".format(W_SCREEN_WIDTH, W_SCREEN_HEIGHT, W_SCREEN
 root.attributes('-topmost', True)
 
 # Create the label for the time display
-time_label = tk.Label(root, text='', font=('Helvetica', W_FONT_SIZE), fg='white', bg='black', pady=50)
+time_label = tk.Label(root, text='', font=(FONT_NAME, W_FONT_SIZE), fg='white', bg='black', pady=50)
 time_label.pack(expand=True)
 
 # Define a function to update the time label
@@ -51,7 +54,7 @@ def toggle_fullscreen():
         root.overrideredirect(True)
         root.geometry("{0}x{1}+{2}+{3}".format(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_OFFSET_X, SCREEN_OFFSET_Y))
         fullscreen_button.place_forget()
-        time_label.config(font=('Helvetica', FONT_SIZE))
+        time_label.config(font=(FONT_NAME, FONT_SIZE))
         root.attributes('-alpha', ALPHA)
     else:
         root.geometry("{0}x{1}+{2}+{3}".format(W_SCREEN_WIDTH, W_SCREEN_HEIGHT, W_SCREEN_OFFSET_X, W_SCREEN_OFFSET_Y))
@@ -60,11 +63,11 @@ def toggle_fullscreen():
         fullscreen_button.config(text='Fullscreen')
         fullscreen_button.pack(pady=10)
         fullscreen_button.place(relx=1.0, rely=0.0, x=-10, y=10, anchor='ne')
-        time_label.config(font=('Helvetica', W_FONT_SIZE))
+        time_label.config(font=(FONT_NAME, W_FONT_SIZE))
 
     fullscreen_mode = not fullscreen_mode
 
-fullscreen_button = tk.Button(root, text='Fullscreen', font=('Helvetica', 20), fg='white', bg='grey', command=toggle_fullscreen)
+fullscreen_button = tk.Button(root, text='Fullscreen', font=(FONT_NAME, 20), fg='white', bg='grey', command=toggle_fullscreen)
 fullscreen_button.pack(pady=10)
 fullscreen_button.place(relx=1.0, rely=0.0, x=-10, y=10, anchor='ne')
 fullscreen_button.configure(cursor='hand2')
